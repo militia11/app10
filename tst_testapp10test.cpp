@@ -1,5 +1,6 @@
 #include <QString>
 #include <QtTest>
+#include "app10/wyzwalacz.h"
 
 class TestApp10Test : public QObject
 {
@@ -18,7 +19,9 @@ TestApp10Test::TestApp10Test()
 
 void TestApp10Test::testCase1()
 {
-    QVERIFY2(true, "Failure");
+    wyzwalacz wyzwalacz;
+    QCOMPARE(100, wyzwalacz.getWyzwolonaLiczba());
+    //QVERIFY2(true, "Failure");
 }
 
 QTEST_APPLESS_MAIN(TestApp10Test)
