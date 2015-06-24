@@ -2,6 +2,6 @@
 
 wyzwalacz::wyzwalacz()
 {
-
+    wyzwolonaLiczba = 10;
 }
 
